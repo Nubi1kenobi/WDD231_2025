@@ -1,0 +1,135 @@
+[{
+"recipe_name" : "Chocolate Chip Cookies v1.0",
+"description" : "Bryan's Special Recipe",
+"ingredients": [
+{
+"name": "Softened Butter",
+"amount": 1,
+"measurement": "Pound(s)"
+},
+{
+"name": "Brown Sugar",
+"amount": 1.5,
+"measurement": "Cup(s)"
+},
+{
+"name": "White Sugar",
+"amount": 1,
+"measurement": "Cup(s)"
+},
+{
+"name": "Large Eggs",
+"amount": 3,
+"measurement": ""
+},
+{
+"name": "Vanilla Extract",
+"amount": 2,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Almond Extract",
+"amount": 1,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Baking Soda",
+"amount": 1.5,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Salt",
+"amount": 0.5,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Flour",
+"amount": 5,
+"measurement": "Cup(s)"
+},
+{
+"name": "Semi-Sweet Chocolate Chips",
+"amount": 2,
+"measurement": "Cup(s)"
+},
+{
+"name": "Shredded Cocanut",
+"amount": "1 to 2",
+"measurement": "Cup(s)"
+}
+],
+"steps": [
+    "1. Cream the butter and sugar together, then beat the eggs and vanilla",
+    "2. Mix in the salt, soda, and flower",
+    "3. Add chocolate chips and cocanut",
+    "4. Bake 8-10 minutes at 350 degrees"
+    ]
+},
+{
+"recipe_name" : "Chocolate Chip Cookies v2.0",
+"description" : "Another One of Bryan's Special Recipe(s)",
+"ingredients": [
+{
+"name": "Softened Butter",
+"amount": 1,
+"measurement": "Pound(s)"
+},
+{
+"name": "Brown Sugar",
+"amount": 1.5,
+"measurement": "Cup(s)"
+},
+{
+"name": "White Sugar",
+"amount": 1,
+"measurement": "Cup(s)"
+},
+{
+"name": "Large Eggs",
+"amount": 3,
+"measurement": ""
+},
+{
+"name": "Vanilla Extract",
+"amount": 2,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Almond Extract",
+"amount": 1,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Baking Soda",
+"amount": 1.5,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Salt",
+"amount": 0.5,
+"measurement": "Teaspoon(s)"
+},
+{
+"name": "Flour",
+"amount": 5,
+"measurement": "Cup(s)"
+},
+{
+"name": "Semi-Sweet Chocolate Chips",
+"amount": 2,
+"measurement": "Cup(s)"
+},
+{
+"name": "Shredded Cocanut",
+"amount": "1 to 2",
+"measurement": "Cup(s)"
+}
+],
+"bsteps": [
+    "1. Cream the butter and sugar together, then beat the eggs and vanilla",
+    "2. Mix in the salt, soda, and flower",
+    "3. Add chocolate chips and cocanut",
+    "4. Bake 8-10 minutes at 350 degrees"
+    ]
+}
+]
