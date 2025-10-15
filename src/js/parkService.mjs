@@ -182,3 +182,7 @@ const park = {
 export function getParkData() {
   return park;
 }
+
+export function getParkInfoLinks() {
+  return park;
+}

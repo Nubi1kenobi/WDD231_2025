@@ -3,8 +3,8 @@ import { parkInfoTemplate, footerTemplate } from "./templates.mjs";
 function setHeaderInfo(data) {
 //inserts data into disclaimer section
 const disclaimer = document.querySelector(".disclaimer > a"); 
-disclaimer.href = parkData.url;
-disclaimer.innerHTML = parkData.fullName;
+disclaimer.href = data.url;
+disclaimer.innerHTML = data.fullName;
 //update the title of the site. Notice that we can select things in the head just like in the body with querySelector
 document.querySelector("head > title").textContent = data.fullName;
 //set the banner image
