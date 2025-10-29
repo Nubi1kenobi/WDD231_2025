@@ -183,27 +183,22 @@ const baseUrl = "https://developer.nps.gov/api/v1/";
 const apiKey = import.meta.env.VITE_NPS_API_KEY;
 console.log("API Key: " + apiKey);
 
-export async function getParkData() {
-  const options = {
-    method: "GET",
-    headers: { "X-Api-Key": apiKey }
-  };
-  
-  const response = await fetch(baseUrl + "parks" + "?parkCode=yell", options);
-  //const response = await fetch(baseUrl + "parks" + "?parkCode=glac", options);
-
-  if (!response.ok) {
-    throw new Error(`NPS API Failed: ${response.status}`);
-  }
-         
-  const data = await response.json();
-  
-  //console.log(data); //checking data
-  //console.log(data.data[0].images[2].url) //checking data
-  return data.data[0];
-  //return data.data[0].results;
-    
+async function getJson(url) {
+  const options = { method: "GET", headers: { "X-Api-Key": apiKey } };
+  let data = {};
+  const response = await fetch(baseUrl + url, options);  
+    if (!response.ok) {
+        throw new Error(`NPS API Failed: ${response.status}`);
+    } else data = await response.json();
+  return data;
 }
+
+export async function getParkData() {
+  const data = await getJson("parks?parkCode=yell");
+  return data.data[0];
+}
+
+
 
 export function getParkInfoLinks(parkData) {
   //console.log(parkData); //checking data
