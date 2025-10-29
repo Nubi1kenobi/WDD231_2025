@@ -1,0 +1,38 @@
+/* Global Nav Bar Styling */
+.global-header {
+  background-color: var(--bs-black);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  fill: white;
+}
+
+.global-header a:link,
+.global-header a:visited,
+#park-header a:link,
+#park-header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.global-header .icon {
+  width: 20px;
+  height: 20px; 
+}
+
+.global-header__right {
+  display: flex;
+  align-items: center;
+}
+
+.global-header__right button {
+  background-color: transparent;
+  border: none; 
+  color: white;
+  font-size: 1rem;
+  padding: 1.2em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  border-left: 1px solid var(--bs-grey-5);
+}

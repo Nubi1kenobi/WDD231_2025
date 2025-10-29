@@ -1,0 +1,24 @@
+/* Footer styles */
+#park-footer {
+  background-color: var(--bs-brown);
+  padding: 1rem;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  font-family: var(--bs-font-serif);
+  margin-bottom: 1rem;
+}
+
+.contact h4 {
+  margin-top: 0.6rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 0.75;
+  color: rgb(101, 100, 100);
+}

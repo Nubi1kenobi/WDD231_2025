@@ -181,7 +181,7 @@ const park = {
 
 const baseUrl = "https://developer.nps.gov/api/v1/";
 const apiKey = import.meta.env.VITE_NPS_API_KEY;
-console.log("API Key: " + apiKey);
+//console.log("API Key: " + apiKey); // verifies API key is being read
 
 async function getJson(url) {
   const options = { method: "GET", headers: { "X-Api-Key": apiKey } };
@@ -197,8 +197,6 @@ export async function getParkData() {
   const data = await getJson("parks?parkCode=yell");
   return data.data[0];
 }
-
-
 
 export function getParkInfoLinks(parkData) {
   //console.log(parkData); //checking data
