@@ -193,11 +193,6 @@ async function getJson(url) {
   return data;
 }
 
-export async function getParkData() {
-  const data = await getJson("parks?parkCode=yell");
-  return data.data[0];
-}
-
 export function getParkInfoLinks(parkData) {
   //console.log(parkData); //checking data
   //console.log(parkData.images[2].url) //checking data
@@ -221,5 +216,15 @@ export function getParkInfoLinks(parkData) {
       image: parkData.images[9].url,
       description: "Learn about the visitor centers in the park."
     }
-  ];
-}
+  ];}
+
+  export async function getParkData(park) {
+    const data = await getJson(park);
+  return data.data[0]; 
+  }
+
+  export async function getParkAlerts(code) {
+    const data = await getJson(`alerts?parkCode=${code}`);
+    if (getJson) { console.log(data)}
+  return data.data; 
+  }

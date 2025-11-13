@@ -35,3 +35,23 @@ export function footerTemplate(info) {
     <p>${voice}</p>
     </section>`;
 }
+
+export function alertTemplate(alert) {
+    let alertType = "";
+    switch (alert.catagory) {
+      case "Park Closure":
+        alertType = "closure";
+        break;
+      default:
+        alertType = alert.catagory.toLowerCase();
+    }
+    return `<li class="alert">
+    <svg class="icon" focusable="false" aria-hidden="true">
+        <use xlink:href="src/images/icons.svg#icon-alert-${alertType}"></use>
+        </svg>
+        <div>
+        <h3 class="alert-${alertType}">${alert.title}</h3>
+        <p class=${alert.description}></p>
+        </div></li>`;
+}
+
